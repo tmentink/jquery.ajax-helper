@@ -31,14 +31,14 @@ module.exports = function(grunt) {
     uglify: {
       dev: {
         options: {
+          banner: banner,
           beautify: {
             beautify: true,
             indent_level: 2,
           },
-          mangle: false,
           compress: false,
-          preserveComments: false,
-          banner: banner
+          mangle: false,
+          preserveComments: /^\//
         },
         src: 'src/js/main.js',
         dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.js',
