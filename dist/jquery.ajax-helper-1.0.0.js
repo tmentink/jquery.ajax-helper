@@ -1,7 +1,7 @@
 /*!
- * jquery.ajax-helper v1.0.0 (https://github.com/tmentink/jquery.ajax-helper)
+ * jQuery AJAX Helper v1.0.0 (https://github.com/tmentink/jquery.ajax-helper)
  * Copyright 2017 Trent Mentink
- * Licensed under MIT
+ * Licensed under MIT (https://github.com/tmentink/jquery.ajax-helper/blob/master/LICENSE.txt)
  */
 !function(window) {
   "use strict";

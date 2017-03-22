@@ -1,16 +1,16 @@
 
 module.exports = function(grunt) {
   var banner =  '/*!\n' +
-                ' * <%= pkg.name %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+                ' * jQuery AJAX Helper v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
                 ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-                ' * Licensed under <%= pkg.license %>\n' +
+                ' * Licensed under <%= pkg.license %> (<%= pkg.homepage %>/blob/master/LICENSE.txt)\n' +
                 ' */\n'
 
   // Configure tasks
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     clean: {
-      js: ['src/js/main.js', 'src/js/ts-compile.js']
+      js: ['src/js/main.js', 'src/js/ts-compile.js', 'src/js/ts-compile.js.map']
     },
     concat: {
       js: {
